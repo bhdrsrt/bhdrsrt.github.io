@@ -97,6 +97,11 @@ section {
 }
 
 @media screen and (max-width:576px) {
+    body {
+        align-items: flex-start;
+        padding: 2.5rem;
+    }
+
     .divider {
         max-width: 18.75rem;
         height: 0.1875rem;
