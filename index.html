@@ -3,17 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <img id="logo" src="resources/logo.svg" alt="Company logo">
+        <img id="logo" src="../resources/logo.svg" alt="Company logo">
+        <hr class="divider logo-divider">
+        <section class="sales">
+            <h2 class="title">Sales</h2>
+            <div class="btn-group">
+                <button class="btn" type="button">Proposal Form</button>
+                <button class="btn" type="button">Order Form</button>
+                <button class="btn" type="button">Delivery Note</button>
+            </div>
+        </section>
         <hr class="divider">
-        <form action="">
-            <input class="input-elem" type="text" placeholder="Username">
-            <input class="input-elem" type="password" placeholder="Password">
-        </form>
+        <section class="purchase">
+            <h2 class="title">Purchase</h2>
+            <div class="btn-group">
+                <button class="btn" type="button">Request Form</button>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="stocks">
+            <h2 class="title">Stock</h2>
+            <div class="btn-group">
+                <button class="btn" type="button">Inquiry</button>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="logout">
+            <div class="btn-group">
+                <button class="btn" type="button">Sign Out</button>
+            </div>
+        </section>
     </main>
 </body>
 </html>
