@@ -59,15 +59,20 @@ form {
   }
 
 @media screen and (max-width:576px) {
+    body {
+        border: 1px solid red;
+        padding-top: 4rem;
+        align-items: flex-start;
+    }
+    
     form {
         flex-wrap: wrap;
         gap: 0.3125rem;
     }
 
-    /* .input-elem {
-        width: 70%;
+    .input-elem {
         font-size: 1.5rem;
-    } */
+    }
 
     .input-elem:hover {
         /* border-color: gray; */
@@ -77,11 +82,4 @@ form {
     .input-elem:focus {
         box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 1);
       }
-}
-
-@media screen and (max-width:526px) {
-    /* .input-elem {
-        width: 70%;
-        font-size: 1rem;
-    } */
 }
