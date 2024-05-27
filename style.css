@@ -64,10 +64,10 @@ form {
         gap: 0.3125rem;
     }
 
-    .input-elem {
+    /* .input-elem {
         width: 70%;
         font-size: 1.5rem;
-    }
+    } */
 
     .input-elem:hover {
         /* border-color: gray; */
@@ -80,8 +80,8 @@ form {
 }
 
 @media screen and (max-width:526px) {
-    .input-elem {
+    /* .input-elem {
         width: 70%;
         font-size: 1rem;
-    }
+    } */
 }
