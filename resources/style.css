@@ -55,7 +55,8 @@ hr.larger {
 
 .btn-type-one {
     --color: #000;
-    padding: 0.8rem 1.7rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     background-color: transparent;
     border-radius: 0.5rem;
     position: relative;

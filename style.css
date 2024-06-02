@@ -45,9 +45,10 @@ hr.larger {
 
 @media screen and (max-width:575px) {
     body {
-        border: 1px solid red;
         height: auto;
         justify-content: flex-start;
+        padding: 2rem;
+        gap: 0.5rem;
     }
 
     .title {
@@ -55,7 +56,8 @@ hr.larger {
     }
 
     .btn-type-one {
-        padding: 0.8rem 1.7rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
         border-radius: 0.5rem;
         /* font-weight: 400; */
         font-size: 1.0rem;
