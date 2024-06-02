@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="resources/style.css">
-    <link rel="stylesheet" href="login-screen.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="resources/logo.svg" alt="Company logo" role="img">
+    <img id="logo" src="resources/logo.svg" alt="Company logo" role="img" draggable="false">
     <hr class="divider larger">
-    <form action="">
-        <input class="type-one" type="text" placeholder="Username" required>
-        <input class="type-one" type="password" placeholder="Password" required>
-    </form>
+    <section class="sales">
+        <h1 class="title">Sales</h1>
+        <button class="btn-type-one" type="button">Proposal Form</button>
+        <button class="btn-type-one" type="button">Order Form</button>
+        <button class="btn-type-one" type="button">Delivery Note</button>
+    </section>
+    <hr class="divider">
+    <section class="purchase">
+        <h1 class="title">Purchase</h1>
+        <button class="btn-type-one" type="button">Request Form</button>
+    </section>
+    <hr class="divider">
+    <section class="stocks">
+        <h1 class="title">Stock</h1>
+        <button class="btn-type-one" type="button">Inquiry</button>
+    </section>
+    <hr class="divider">
+    <section class="logout">
+        <button class="btn-type-one exit" type="button">Sign Out</button>
+    </section>
 </body>
 </html>
