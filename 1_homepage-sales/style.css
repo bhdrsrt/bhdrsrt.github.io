@@ -51,7 +51,7 @@ hr.larger {
         gap: 0.5rem;
     }
 
-    .title {
+    /* .title {
         font-size: 2rem;
     }
 
@@ -59,8 +59,7 @@ hr.larger {
         padding-top: 0.4rem;
         padding-bottom: 0.4rem;
         border-radius: 0.5rem;
-        /* font-weight: 400; */
         font-size: 1.0rem;
         border: 0.125rem solid;
-    }
+    } */
 }
