@@ -12,6 +12,7 @@ body {
     background-color: #fffdf3;
 }
 
+/* Divider Style */
 hr.divider {
     width: 100%;
     height: 0.25rem;
@@ -20,11 +21,22 @@ hr.divider {
     background-color: rgba(0, 0, 0);
 }
 
+hr.smaller {
+    height: 0.125rem;
+    border-radius: 0.0625rem;
+}
+
+hr.small {
+    height: 0.1875rem;
+    border-radius: 0.09375rem;
+}
+
 hr.larger {
     height: 0.375rem;
     border-radius: 0.1875rem;
 }
 
+/* Input Style 1 */
 .input-type-one {
     width: 100%;
     padding: 0.5rem;
@@ -36,16 +48,16 @@ hr.larger {
 
 .input-type-one:hover {
     /* background-color: rgba(22, 97, 209, 0.1); */
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
     filter: invert(10%);
-    transition: 1000ms;
+    transition: 250ms;
 }
 
 .input-type-one:focus {
     outline: none; /* Remove default outline */
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
     filter: invert(10%);
 }
 
@@ -53,6 +65,7 @@ hr.larger {
     color: rgba(0, 0, 0, 0.75);
 }
 
+/* Button Style 1 */
 .btn-type-one {
     --color: #000;
     padding-top: 0.8rem;
@@ -62,6 +75,8 @@ hr.larger {
     position: relative;
     overflow: hidden;
     transition: 250ms;
+    text-align: center;
+    text-decoration: none;
     font-weight: 400;
     font-size: 1.5rem;
     border: 0.125rem solid;
@@ -107,20 +122,114 @@ hr.larger {
     filter: invert(35%);
 }
 
-.btn-type-one.exit {
+/* Save&Exit Button Style 1  */
+.btn-type-one.green {
+    --color: #fffdf3;
+    background-color: #198754;
+}
+
+.btn-type-one.green:hover {
+    color: #198754;
+}
+
+.btn-type-one.green:active::before, .btn-type-one.green:active::after {
+    background-color: #198754;
+}
+
+.btn-type-one.green:active {
+    color: #000;
+    filter: invert(5%);
+}
+
+/* Save Button Style 1  */
+.btn-type-one.yellow {
+    --color: #fffdf3;
+    background-color: #ffc107;
+}
+
+.btn-type-one.yellow:hover {
+    color: #ffc107;
+}
+
+.btn-type-one.yellow:active::before, .btn-type-one.yellow:active::after {
+    background-color: #ffc107;
+}
+
+.btn-type-one.yellow:active {
+    color: #000;
+    filter: invert(5%);
+}
+
+/* Exit Button Style 1  */
+.btn-type-one.red {
     --color: #fffdf3;
     background-color: #bb2d3b;
 }
 
-.btn-type-one.exit:hover {
+.btn-type-one.red:hover {
     color: #bb2d3b;
 }
 
-.btn-type-one.exit:active::before, .btn-type-one.exit:active::after {
+.btn-type-one.red:active::before, .btn-type-one.red:active::after {
     background-color: #bb2d3b;
 }
 
-.btn-type-one.exit:active {
+.btn-type-one.red:active {
     color: #000;
     filter: invert(5%);
+}
+
+/* Table Design */
+.product-details-table {
+    border-collapse: collapse;
+}
+
+.product-details-table td:nth-child(2n) {
+    /* background: rgba(34, 34, 34, 0.25); */
+}
+
+.product-details-table tr:nth-child(2n) {
+    filter: invert(10%);
+}
+
+.product-details-table * {
+    text-align: center;
+}
+
+.button-table {
+    --btn-color: rgb(34, 34, 34);
+    --btn-text-color: #fff;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-left: 0.0625rem solid #fffdf3;
+    border-right: 0.0625rem solid #fffdf3;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    height: 3rem;
+}
+
+.button-table:hover {
+    filter: invert(10%);
+    border: none;
+}
+
+.button-table:active {
+    filter: invert(80%);
+    border: none;
+    transition: 250ms;
+}
+
+.input-table {
+    border: none;
+    background-color: #fffdf3;
+    font-size: 1rem;
+    padding: 0.5rem 0.375rem;
+    width: 100%;
+}
+
+.input-table:focus {
+    outline: none;
 }
