@@ -4,6 +4,8 @@
 
 body {
     /* border: 1px solid red; */
+    --background-color: #fffdf3;
+    --color-one: rgb(34, 34, 34);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +18,7 @@ body {
 #logo {
     /* border: 1px solid green; */
     width: 100%;
-    max-width: 640px;
+    max-width: 40rem;
 }
 
 section {
@@ -31,7 +33,7 @@ section {
 }
 
 .title {
-    padding-bottom: 0.25rem;
+    /* border: 1px solid red; */
     font-size: 2.5rem;
 }
 
@@ -40,26 +42,56 @@ hr.divider {
 }
 
 hr.larger {
-    max-width: 640px;
+    max-width: 40rem;
 }
 
 @media screen and (max-width:575px) {
     body {
         height: auto;
         justify-content: flex-start;
+        align-items: center;
         padding: 2rem;
         gap: 0.5rem;
     }
 
-    /* .title {
-        font-size: 2rem;
+    #logo {
+        /* border: 1px solid green; */
+        width: 100%;
+        max-width: 23.75rem;
+    }
+
+    hr.divider:not(:first-of-type):not(:last-of-type) {
+        display: none;
+    }
+
+    hr.larger {
+        max-width: 23.75rem;
+    }
+
+    hr.divider:not(:first-of-type) {
+        max-width: 19rem;
+        width: 80%;
+    }
+
+    section {
+        max-width: 19rem;
+        width: 80%;
+        color: #fffdf3;
+        color: #222222;
+    }
+
+    .title {
+        padding: 0.25rem 0;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        background: radial-gradient(var(--color-one), rgb(63, 63, 63));
+        color: var(--background-color);
+        border-radius: 0.25rem;
     }
 
     .btn-type-one {
-        padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
-        border-radius: 0.5rem;
-        font-size: 1.0rem;
-        border: 0.125rem solid;
-    } */
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        font-size: 1.125rem;
+    }
 }

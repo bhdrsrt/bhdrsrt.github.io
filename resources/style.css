@@ -9,7 +9,9 @@ html {
 }
 
 body {
-    background-color: #fffdf3;
+    --background-color: #fffdf3;
+    --color-one: rgb(34, 34, 34);
+    background-color: var(--background-color);
 }
 
 /* Divider Style */
@@ -18,7 +20,7 @@ hr.divider {
     height: 0.25rem;
     border-radius: 0.125rem;
     border: none;
-    background-color: rgba(0, 0, 0);
+    background-color: var(--color-one);
 }
 
 hr.smaller {
@@ -41,9 +43,9 @@ hr.larger {
     width: 100%;
     padding: 0.5rem;
     font-size: 2rem;
-    background-color: #fffdf3;
+    background-color: var(--background-color);
     border: none;
-    border-bottom: 0.125rem solid #000;
+    border-bottom: 0.125rem solid var(--color-one);
 }
 
 .input-type-one:hover {
@@ -67,7 +69,7 @@ hr.larger {
 
 /* Button Style 1 */
 .btn-type-one {
-    --color: #000;
+    --color: var(--color-one);
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     background-color: transparent;
@@ -115,7 +117,7 @@ hr.larger {
 }
 
 .btn-type-one:hover {
-    color: #fffdf3;
+    color: var(--background-color);
 }
 
 .btn-type-one:active {
@@ -124,58 +126,61 @@ hr.larger {
 
 /* Save&Exit Button Style 1  */
 .btn-type-one.green {
-    --color: #fffdf3;
-    background-color: #198754;
+    --color: var(--background-color);
+    --green-color: #198754;
+    background-color: var(--green-color);
 }
 
 .btn-type-one.green:hover {
-    color: #198754;
+    color: var(--green-color);
 }
 
 .btn-type-one.green:active::before, .btn-type-one.green:active::after {
-    background-color: #198754;
+    background-color: var(--green-color);
 }
 
 .btn-type-one.green:active {
-    color: #000;
+    color: var(--color-one);
     filter: invert(5%);
 }
 
 /* Save Button Style 1  */
 .btn-type-one.yellow {
-    --color: #fffdf3;
-    background-color: #ffc107;
+    --color: var(--background-color);
+    --yellow-color: #ffc107;
+    background-color: var(--yellow-color);
 }
 
 .btn-type-one.yellow:hover {
-    color: #ffc107;
+    color: var(--yellow-color);
 }
 
 .btn-type-one.yellow:active::before, .btn-type-one.yellow:active::after {
-    background-color: #ffc107;
+    background-color: var(--yellow-color);
 }
 
 .btn-type-one.yellow:active {
-    color: #000;
+    color: var(--color-one);
     filter: invert(5%);
 }
 
 /* Exit Button Style 1  */
 .btn-type-one.red {
-    --color: #fffdf3;
-    background-color: #bb2d3b;
+    --color: var(--background-color);
+    --red-color: #bb2d3b;
+    background-color: var(--red-color);
 }
 
 .btn-type-one.red:hover {
-    color: #bb2d3b;
+    color: var(--red-color);
 }
 
 .btn-type-one.red:active::before, .btn-type-one.red:active::after {
-    background-color: #bb2d3b;
+    background-color: var(--red-color);
 }
 
 .btn-type-one.red:active {
-    color: #000;
+    color: var(--color-one);
     filter: invert(5%);
 }
 
@@ -202,8 +207,8 @@ hr.larger {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
-    border-left: 0.0625rem solid #fffdf3;
-    border-right: 0.0625rem solid #fffdf3;
+    border-left: 0.0625rem solid var(--background-color);
+    border-right: 0.0625rem solid var(--background-color);
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -224,7 +229,7 @@ hr.larger {
 
 .input-table {
     border: none;
-    background-color: #fffdf3;
+    background-color: var(--background-color);
     font-size: 1rem;
     padding: 0.5rem 0.375rem;
     width: 100%;
