@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="../resources/style.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="resources/logo.svg" alt="Company logo" role="img" draggable="false">
+    <img class="logo" src="../resources/logo.svg" alt="Company logo" role="img" draggable="false">
     <hr class="divider larger">
-    <form action="">
+    <form id="login-form" action="">
         <input class="input-type-one" type="text" placeholder="Username" required>
         <input class="input-type-one" type="password" placeholder="Password" required>
-        <!-- Remove the two lines below -->
-        <hr class="divider smaller">
-        <a href="1_homepage-sales/index.html" class="btn-type-one green">Login</a>
+        <button class="btn-type-one green" onclick = "window.location.href='1_homepage-sales/index.html';">Login</button>
     </form>
 </body>
 </html>

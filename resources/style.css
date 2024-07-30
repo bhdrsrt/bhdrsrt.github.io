@@ -185,18 +185,6 @@ hr.larger {
 }
 
 /* Table Design */
-.product-details-table {
-    border-collapse: collapse;
-}
-
-.product-details-table td:nth-child(2n) {
-    /* background: rgba(34, 34, 34, 0.25); */
-}
-
-.product-details-table tr:nth-child(2n) {
-    filter: invert(10%);
-}
-
 .product-details-table * {
     text-align: center;
 }
@@ -207,8 +195,8 @@ hr.larger {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
-    border-left: 0.0625rem solid var(--background-color);
-    border-right: 0.0625rem solid var(--background-color);
+    /* border-left: 0.0625rem solid var(--background-color);
+    border-right: 0.0625rem solid var(--background-color); */
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -217,12 +205,12 @@ hr.larger {
 }
 
 .button-table:hover {
-    filter: invert(10%);
+    filter: invert(15%);
     border: none;
 }
 
 .button-table:active {
-    filter: invert(80%);
+    filter: invert(85%);
     border: none;
     transition: 250ms;
 }
