@@ -144,4 +144,16 @@ hr.larger {
     --btn-color: #950101;
     --btn-border-color: teal;
 }
+
 /* Table Design */
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+}
+
+.input-table {
+    /* all: unset; */
+    width: 100%;
+}
+
