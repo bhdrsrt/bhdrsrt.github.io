@@ -3,9 +3,8 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 50vh;
-    max-width: 42rem;
+    width: min(40rem, 100% - 2rem);
     margin: 0 auto;
-    padding: 0 1rem;
     gap: 1rem;
 }
 
