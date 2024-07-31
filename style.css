@@ -3,9 +3,9 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 50vh;
-    max-width: 44rem;
+    max-width: 42rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     gap: 1rem;
 }
 
