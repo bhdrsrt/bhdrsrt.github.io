@@ -31,7 +31,6 @@ body {
     #login-form {
         width: 80%;
         margin: 0 auto;
-        /* font-size: 32px; */
     }
 
     #login-form > input{
