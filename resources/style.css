@@ -12,6 +12,7 @@ html {
 body {
     --background-color: #fffdf3;
     --color-one: #222222;
+    --color-two: #585858;
     background-color: var(--background-color);
 }
 
@@ -72,5 +73,33 @@ hr.larger {
 }
 
 .text-input::placeholder {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Button Style */
+.btn {
+    background-color: var(--background-color);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    user-select: none;
+    width: 100%;
+    padding: 0.25em;
+    border: 0.125em solid var(--color-one);
+    border-radius: 0.25em;
+    transition: background-color 300ms;
+}
+
+.btn:hover {
+    color: var(--background-color);
+    background-color: var(--color-two);
+    border-color: var(--background-color);
+    border-radius: 0.25em;
+}
+
+.btn:active {
+    color: var(--background-color);
+    background-color: var(--color-one);
+    border-color: var(--background-color);
+    border-radius: 0.25em;
 }
