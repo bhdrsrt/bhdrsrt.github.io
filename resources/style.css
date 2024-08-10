@@ -11,149 +11,66 @@ html {
 
 body {
     --background-color: #fffdf3;
-    --color-one: rgb(34, 34, 34);
+    --color-one: #222222;
     background-color: var(--background-color);
 }
 
+
 /* Divider Style */
 hr.divider {
+    --divider-height: 0.25em;
     width: 100%;
-    height: 0.25rem;
-    border-radius: 0.125rem;
+    height: var(--divider-height);
+    border-radius: calc(0.5 * var(--divider-height));
     border: none;
     background-color: var(--color-one);
 }
 
 hr.smaller {
-    height: 0.125rem;
-    border-radius: 0.0625rem;
+    height: calc(0.5 * var(--divider-height));
+    border-radius: calc(0.25 * var(--divider-height));
 }
 
 hr.small {
-    height: 0.1875rem;
-    border-radius: 0.09375rem;
+    height: calc(0.75 * var(--divider-height));
+    border-radius: calc(0.375 * var(--divider-height));
+}
+
+hr.large {
+    height: calc(1.25 * var(--divider-height));
+    border-radius: calc(0.625 * var(--divider-height));
 }
 
 hr.larger {
-    height: 0.375rem;
-    border-radius: 0.1875rem;
+    height: calc(1.5 * var(--divider-height));
+    border-radius: calc(0.75 * var(--divider-height));
 }
 
-/* Input Style 1 */
-.input-type-one {
-    font-size: 2rem;
+/* Input Style */
+.text-input {
+    background-color: var(--background-color);
+    font-size: 1em;
     font-weight: 500;
     width: 100%;
-    padding: 0.5em;
-    background-color: var(--background-color);
+    padding: 0.25em;
     border: none;
     border-bottom: 0.125em solid var(--color-one);
 }
 
-.input-type-one:hover {
-    /* background-color: rgba(22, 97, 209, 0.1); */
+.text-input:hover {
     border-top-right-radius: 0.25em;
     border-top-left-radius: 0.25em;
-    filter: invert(10%);
+    filter: invert(7.5%);
     transition: 250ms;
 }
 
-.input-type-one:focus {
-    outline: none; /* Remove default outline */
+.text-input:focus {
+    outline: none;
     border-top-right-radius: 0.25em;
     border-top-left-radius: 0.25em;
-    filter: invert(10%);
+    filter: invert(12.5%);
 }
 
-.input-type-one::placeholder {
+.text-input::placeholder {
     color: rgba(0, 0, 0, 0.75);
 }
-
-/* Button Style*/
-.btn {
-    --btn-color: rgb(34,34,34);
-    --btn-border-color: #76ABAE;
-    all: unset;
-    font-size: 2rem;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0.2em 1.5em;
-    border: var(--btn-color) solid 0.15em;
-    border-radius: 0.25em;
-    color: var(--btn-color);
-    overflow: hidden;
-    transition: border 300ms, color 300ms;
-    user-select: none;  /* Prevents selecting text within the element */
-}
-
-.btn > p {
-    z-index: 1;
-}
-
-.btn:hover {
-    --btn-text-color: #fffdf3;
-    color: var(--btn-text-color);
-}
-
-.btn:active {
-    border-color: var(--btn-border-color);
-}
-
-.btn::after, .btn::before {
-    content: "";
-    position: absolute;
-    width: 30em;
-    aspect-ratio: 1;
-    background-color: var(--btn-color);
-    opacity: 75%;
-    border-radius: 50%;
-    transition: transform 500ms, background 300ms;
-}
-
-.btn::before {
-    left: 0;
-    transform: translateX(-29em);
-}
-
-.btn::after {
-    right: 0;
-    transform: translateX(29em);
-}
-
-.btn:hover:before {
-    transform: translateX(-1em);
-}
-
-.btn:hover:after {
-    transform: translateX(1em);
-}
-
-.btn:active:before, .btn:active:after {
-    background: var(--btn-border-color);
-}
-
-.green {
-    --btn-color: mediumseagreen;
-    --btn-border-color: teal;
-}
-
-.red {
-    --btn-color: #950101;
-    --btn-border-color: teal;
-}
-
-/* Table Design */
-.table-data {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: blanchedalmond;
-}
-
-.input-table {
-    /* all: unset; */
-    width: 100%;
-}
-

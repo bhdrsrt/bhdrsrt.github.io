@@ -1,39 +1,40 @@
 body {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
-    width: min(40rem, 100% - 2rem);
+    width: min(40rem, 100% - 2em);
     margin: 0 auto;
     gap: 1rem;
 }
 
 .logo {
-    width: 100%;
+    user-select: none;
 }
 
-form {
+#login-form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5em;
 }
 
-form > .input-type-one {
+#login-form > input{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:36em) {
     body {
         height: 100vh;
     }
 
-    form {
+    #login-form {
         width: 80%;
         margin: 0 auto;
+        /* font-size: 32px; */
     }
 
-    form > .input-type-one {
-        font-size: 2rem;
+    #login-form > input{
+        font-size: 2em;
     }
 }
