@@ -81,14 +81,14 @@ hr.larger {
 .btn {
     background-color: var(--background-color);
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     user-select: none;
     width: 100%;
     padding: 0.25em;
     border: 0.125em solid var(--color-one);
     border-radius: 0.25em;
-    transition: background-color 300ms border-color 300ms;
+    transition: background-color 5300ms border-color 5300ms;
 }
 
 .btn:hover {
@@ -110,6 +110,11 @@ hr.larger {
 }
 
 .btn.red:hover {
-    background-color: var(--color-two);
-    border-color: var(--color-two);
+    color: var(--color-one);
+    border-color: var(--color-one);
+}
+
+.btn.red:active {
+    color: var(--color-one);
+    border-color: var(--background-color);
 }
