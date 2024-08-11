@@ -13,6 +13,7 @@ body {
     --background-color: #fffdf3;
     --color-one: #222222;
     --color-two: #585858;
+    --color-red: #B22222;
     background-color: var(--background-color);
 }
 
@@ -87,19 +88,28 @@ hr.larger {
     padding: 0.25em;
     border: 0.125em solid var(--color-one);
     border-radius: 0.25em;
-    transition: background-color 300ms;
+    transition: background-color 300ms border-color 300ms;
 }
 
 .btn:hover {
     color: var(--background-color);
     background-color: var(--color-two);
-    border-color: var(--background-color);
-    border-radius: 0.25em;
+    border-color: var(--color-two);
 }
 
 .btn:active {
     color: var(--background-color);
     background-color: var(--color-one);
     border-color: var(--background-color);
-    border-radius: 0.25em;
+}
+
+.btn.red {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--background-color);
+}
+
+.btn.red:hover {
+    background-color: var(--color-two);
+    border-color: var(--color-two);
 }
