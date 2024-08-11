@@ -60,3 +60,9 @@ section {
         max-width: 100%;
     }
 }
+
+@media screen and (max-height:48em) {
+    body {
+        justify-content: flex-start;
+    }
+}
