@@ -12,7 +12,7 @@ html {
 body {
     --background-color: #fffdf3;
     --color-one: #222222;
-    --color-two: #585858;
+    --color-two: #B8B8B8;
     --color-red: #B22222;
     background-color: var(--background-color);
 }
@@ -88,7 +88,8 @@ hr.larger {
     padding: 0.25em;
     border: 0.125em solid var(--color-one);
     border-radius: 0.25em;
-    transition: background-color 5300ms border-color 5300ms;
+    /* transition not working, learn it if you want to use it */
+    /* transition: background-color 5300ms border-color 5300ms; */
 }
 
 .btn:hover {
@@ -117,4 +118,38 @@ hr.larger {
 .btn.red:active {
     color: var(--color-one);
     border-color: var(--background-color);
+}
+
+/* Accordion Style */
+.accordion {
+    --thickness: 0.125em;
+    border: var(--thickness) solid var(--color-one);
+    border-radius: 0.25em;
+    user-select: none;
+}
+
+.accordion > * {
+    border-bottom: var(--thickness) solid var(--color-one);
+}
+
+.accordion > *:last-child {
+    border-bottom: none;
+}
+
+.accordion summary {
+    font-size: 1.25em;
+    font-weight: 500;
+    list-style: none;
+    padding: 0.25em;
+}
+
+.accordion > details[open] summary {
+    border-bottom: var(--thickness) solid var(--color-one);
+    background-color: var(--color-one);
+    color: var(--background-color);
+}
+
+.accordion > details > summary:hover {
+    background-color: var(--color-one);
+    color: var(--background-color);
 }
