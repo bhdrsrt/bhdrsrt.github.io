@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    width: min(40rem, 100%);
+    width: min(40em, 100%);
     padding: 1em;
     margin: 0 auto;
     gap: 0.75em;
@@ -20,6 +20,7 @@ section {
 .title {
     text-align: center;
     text-transform: uppercase;
+    user-select: none;
     color: var(--background-color);
     background-color: var(--color-one);
     border-radius: 0.125em;
