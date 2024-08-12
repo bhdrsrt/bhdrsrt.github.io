@@ -1,10 +1,11 @@
 body {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: min(40rem, 100% - 2em);
+    width: min(40rem, 100%);
     margin: 0 auto;
+    padding: 1em;
     gap: 1rem;
 }
 
@@ -35,5 +36,12 @@ body {
 
     #login-form > input{
         font-size: 2em;
+    }
+}
+
+@media screen and (max-height:22em) {
+    body {
+        justify-content: flex-start;
+        padding-top: 1em;
     }
 }
