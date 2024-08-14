@@ -57,12 +57,9 @@ html {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    border-radius: 0.125em;
-    border-bottom-left-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
+    border-radius: 0.25em;
     background-color: var(--color-one);
     color: var(--background-color);
-    /* gap: 0.25em; */
 }
 
 .proposal-details > h2 {
@@ -75,5 +72,6 @@ html {
 }
 
 .mobile-screen .action-buttons > * {
+    font-size: 1.25em;
     margin-bottom: 0.25em;
 }
