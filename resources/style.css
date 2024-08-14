@@ -13,7 +13,7 @@ body {
     --background-color: hsla(50, 100%, 98%, 1);
     --color-one: hsla(0, 0%, 15%, 1);
     --color-two: hsla(0, 0%, 15%, 0.5);
-    --color-three: hsla(0, 0%, 15%, 0.15);
+    --color-three: hsla(0, 0%, 69%, 1);
     --color-red: hsla(0, 68%, 42%, 1);
     --color-green: hsla(120, 42%, 42%, 1);
     background-color: var(--background-color);
