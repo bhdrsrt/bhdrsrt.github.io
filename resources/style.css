@@ -15,7 +15,7 @@ body {
     --color-two: hsla(0, 0%, 15%, 0.5);
     --color-three: hsla(0, 0%, 15%, 0.15);
     --color-red: hsla(0, 68%, 42%, 1);
-    --color-green: hsla(120, 55%, 42%, 1);
+    --color-green: hsla(120, 42%, 42%, 1);
     background-color: var(--background-color);
 }
 
