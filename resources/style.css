@@ -6,27 +6,24 @@
 }
 
 html {
+    --background-color: hsla(50, 100%, 98%, 1);
+    --border-color: hsla(0, 0%, 15%, 1);
+    --placeholder-color: hsla(0, 0%, 0%, 0.6);
     font-size: 16px;
 }
 
 body {
-    --background-color: hsla(50, 100%, 98%, 1);
-    --color-one: hsla(0, 0%, 15%, 1);
-    --color-two: hsla(0, 0%, 15%, 0.5);
-    --color-three: hsla(0, 0%, 69%, 1);
-    --color-red: hsla(0, 68%, 42%, 1);
-    --color-green: hsla(120, 42%, 42%, 1);
     background-color: var(--background-color);
 }
 
 /* Divider Style */
 hr.divider {
     --divider-height: 0.25em;
+    background-color: var(--border-color);
     width: 100%;
     height: var(--divider-height);
     border-radius: calc(0.5 * var(--divider-height));
     border: none;
-    background-color: var(--color-one);
 }
 
 hr.smaller {
@@ -50,42 +47,31 @@ hr.larger {
 }
 
 /* Input Style */
-.text-input {
+.inp-one {
     background-color: var(--background-color);
     font-size: 1em;
     font-weight: 500;
     width: 100%;
     padding: 0.25em;
+    outline: none;
     border: none;
-    border-bottom: 0.125em solid var(--color-one);
-}
-
-.text-input:hover {
+    border-bottom: 0.125em solid var(--border-color);
     border-top-right-radius: 0.25em;
     border-top-left-radius: 0.25em;
+}
+
+.inp-one:hover {
     filter: invert(7.5%);
     transition: 250ms;
 }
 
-.text-input:focus {
-    outline: none;
-    border-top-right-radius: 0.25em;
-    border-top-left-radius: 0.25em;
+.inp-one:focus {
     filter: invert(12.5%);
+    transition: 250ms;
 }
 
-.text-input::placeholder {
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.text-input[type="number"]::-webkit-outer-spin-button,
-.text-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.text-input[type="number"] {
-    -moz-appearance: textfield;
+.inp-one::placeholder {
+    color: var(--placeholder-color);
 }
 
 /* Button Style */
