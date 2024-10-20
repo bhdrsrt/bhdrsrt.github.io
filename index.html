@@ -13,10 +13,9 @@
 <body>
     <img class="logo" src="../resources/logo.svg" alt="Company logo" role="img" draggable="false">
     <hr class="divider larger">
-    <form id="login-form" action="">
-        <input class="text-input" type="text" placeholder="Username" required autofocus>
-        <input class="text-input" type="password" placeholder="Password" required>
-        <button class="btn" onclick = "window.location.href='0_homepage-sales/index.html';">Login</button>
+    <form id="login-form" action="./0_homepage-sales/index.html" method="post">
+        <input class='inp-one' type="text" name="username" id="name" placeholder="Username" minlength="7" maxlength="15" pattern="[A-Za-z]" required autofocus>
+        <input class='inp-one' type="password" name="password" id="password" placeholder="Password" minlength="7" maxlength="15" pattern="[0-9]" required>
     </form>
 </body>
 </html>
