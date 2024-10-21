@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="../resources/logo.svg" alt="Company logo" role="img" draggable="false">
+    <img class="logo" src="./resources/logo.svg" alt="Company logo" role="img" draggable="false">
     <hr class="divider larger">
-    <form id="login-form" action="./0_homepage-sales/index.html" method="post">
-        <input class='inp-one' type="text" name="username" id="name" placeholder="Username" minlength="7" maxlength="15" pattern="[A-Za-z]" required autofocus>
-        <input class='inp-one' type="password" name="password" id="password" placeholder="Password" minlength="7" maxlength="15" pattern="[0-9]" required>
+    <form id="login-form" action="" method="post">
+        <input class="inp-one" type="text" name="username" id="name" placeholder="Username" minlength="7" maxlength="15" pattern="[A-Za-z]{7,15}" required autofocus>
+        <input class="inp-one" type="password" name="password" id="password" placeholder="Password" minlength="7" maxlength="15" pattern="[0-9]{7,15}" required>
+        <input type="submit" value="Login" style="display: none;">
     </form>
+    <script src="main.js"></script>
 </body>
 </html>
