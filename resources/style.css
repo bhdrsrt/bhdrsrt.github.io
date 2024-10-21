@@ -16,6 +16,14 @@ body {
     background-color: var(--background-color);
 }
 
+/* Element hides and also won't take up any space on the page */
+.invisible {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
 /* Divider Style */
 hr.divider {
     --divider-height: 0.25em;
