@@ -22,13 +22,13 @@ section {
     text-transform: uppercase;
     user-select: none;
     color: var(--background-color);
-    background-color: var(--color-one);
+    background-color: var(--border-color);
     border-radius: 0.125em;
     font-size: 2em;
     padding: 0.125em 0;
 }
 
-.btn {
+.btn-one {
     text-transform: capitalize;
     font-size: 1.5em;
 }

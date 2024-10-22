@@ -83,65 +83,50 @@ hr.larger {
 }
 
 /* Button Style */
-.btn {
+.btn-one {
     background-color: var(--background-color);
+    color: var(--border-color);
+    border: 0.125em solid var(--border-color);
+    border-radius: 0.25em;
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
     user-select: none;
     width: 100%;
     padding: 0.25em;
-    border: 0.125em solid var(--color-one);
+}
+
+.btn-one:hover {
+    background-color: var(--border-color);
+    color: var(--background-color);
+    transition: 100ms;
+    transition-timing-function: linear;
+}
+
+.btn-one:active {
+    border: 0.125em solid var(--background-color);
+    border-radius: 0.375em;
+    background-color: var(--border-color);
+    color: var(--background-color);
+}
+
+.btn-one-red {
+    --border-color: hsl(350, 100%, 36%);
+    background-color: var(--border-color);
+    color: var(--background-color);
+}
+
+.btn-one-red:hover {
+    border: 0.125em solid var(--background-color);
+    border-radius: 0.375em;
+}
+
+.btn-one-red:active {
+    border: 0.125em solid var(--border-color);
     border-radius: 0.25em;
-    /* transition not working, learn it if you want to use it */
-    /* transition: background-color 5300ms border-color 5300ms; */
+    background-color: var(--background-color);
+    color: var(--border-color);
 }
-
-.btn:hover {
-    color: var(--background-color);
-    background-color: var(--color-two);
-    border-color: var(--color-two);
-}
-
-.btn:active {
-    color: var(--background-color);
-    background-color: var(--color-one);
-    border-color: var(--background-color);
-}
-
-.btn.red {
-    background-color: var(--color-red);
-    border-color: var(--color-red);
-    color: var(--background-color);
-}
-
-.btn.red:hover {
-    color: var(--color-one);
-    border-color: var(--color-one);
-}
-
-.btn.red:active {
-    color: var(--color-one);
-    border-color: var(--background-color);
-}
-
-.btn.green {
-    background-color: var(--color-green);
-    border-color: var(--color-green);
-    color: var(--background-color);
-}
-
-.btn.green:hover {
-    color: var(--color-one);
-    border-color: var(--color-one);
-}
-
-.btn.green:active {
-    color: var(--color-one);
-    border-color: var(--background-color);
-}
-
-
 
 /* Accordion Style */
 .accordion {
