@@ -100,7 +100,7 @@ hr.larger {
     background-color: var(--border-color);
     color: var(--background-color);
     transition: 100ms;
-    transition-timing-function: linear;
+    transition-timing-function: ease-out;
 }
 
 .btn-one:active {
