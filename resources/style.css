@@ -9,6 +9,7 @@ html {
     --background-color: hsla(50, 100%, 98%, 1);
     --border-color: hsla(0, 0%, 15%, 1);
     --placeholder-color: hsla(0, 0%, 0%, 0.6);
+    --hover-color: hsl(0, 7%, 23%);
     font-size: 16px;
 }
 
@@ -54,7 +55,7 @@ hr.larger {
     border-radius: calc(0.75 * var(--divider-height));
 }
 
-/* Input Style */
+/*Input Style*/
 .inp-one {
     background-color: var(--background-color);
     font-size: 1em;
@@ -97,14 +98,14 @@ hr.larger {
 }
 
 .btn-one:hover {
-    background-color: var(--border-color);
+    background-color: var(--placeholder-color);
     color: var(--background-color);
     transition: 100ms;
     transition-timing-function: ease-out;
 }
 
 .btn-one:active {
-    border: 0.125em solid var(--background-color);
+    border-color: var(--background-color);
     border-radius: 0.375em;
     background-color: var(--border-color);
     color: var(--background-color);
@@ -117,7 +118,8 @@ hr.larger {
 }
 
 .btn-one-red:hover {
-    border: 0.125em solid var(--background-color);
+    border-color: var(--background-color);
+    background-color: var(--border-color);
     border-radius: 0.375em;
 }
 
@@ -130,35 +132,45 @@ hr.larger {
 
 /* Accordion Style */
 .accordion {
-    --thickness: 0.125em;
-    border: var(--thickness) solid var(--color-one);
+    --accordion-padding: 0.25em;
+    border: 0.125em solid var(--border-color);
     border-radius: 0.25em;
-    user-select: none;
+    padding: var(--accordion-padding);
+    width: 100%;
 }
 
-.accordion > * {
-    border-bottom: var(--thickness) solid var(--color-one);
-}
-
-.accordion > *:last-child {
-    border-bottom: none;
-}
-
-.accordion summary {
-    font-size: 1.25em;
-    font-weight: 500;
+.accordion > summary {
     list-style: none;
-    padding: 0.25em;
-    background-color: var(--color-three);
+    font-weight: bold;
+    margin: 0 calc(-1 * var(--accordion-padding));
+    padding: 0 var(--accordion-padding);
+    color: var(--border-color);
 }
 
-.accordion > details[open] summary {
-    /* border-bottom: var(--thickness) solid var(--color-one); */
-    background-color: var(--color-two);
+.accordion:hover {
+    background-color: var(--border-color);
+    transition: 100ms;
+    transition-timing-function: ease-in1;
+}
+
+.accordion:hover > summary {
+    color: var(--background-color);
+    transition: 100ms;
+    transition-timing-function: ease-in;
+}
+
+.accordion[open] {
+    padding-top: 0;
+    background-color: var(--background-color);
+}
+
+.accordion[open] > summary {
+    border-bottom: 0.125em solid var(--border-color);
+    padding: var(--accordion-padding);
+    background-color: var(--border-color);
     color: var(--background-color);
 }
 
-.accordion > details > summary:hover {
-    background-color: var(--color-two);
-    color: var(--background-color);
+.accordion[open] *:not(:first-child) {
+    margin-top: var(--accordion-padding);
 }
