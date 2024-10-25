@@ -23,7 +23,6 @@ section {
     user-select: none;
     color: var(--background-color);
     background-color: var(--border-color);
-    border-radius: 0.125em;
     font-size: 2em;
     padding: 0.125em 0;
 }
