@@ -4,205 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposal Form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../resources/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main class="mobile-screen">
-        <header>
-            <h1>Proposal Form</h1>
-            <p class="date">Date<br>28/05/2024</p>
-        </header>
-        <section class="customer-details">
-            <form action="" class="accordion">
-                <details class="customer-info" name="customer-info" open>
-                    <summary>Customer Info</summary>
-                    <input class="text-input" type="text" name="customer-title" id="customer-title" placeholder="Name/Title" required>
-                    <input class="text-input" type="tel" name="customer-phone" id="customer-phone" placeholder="Phone" required>
-                    <input class="text-input" type="email" name="customer-mail" id="customer-mail" placeholder="Email">
-                    <input class="text-input" type="text" name="customer-address" id="customer-address" placeholder="Address">
-                </details>
-            </form>
+    <header>
+        <!-- <img class="logo" src="../resources/logo.svg" alt="Company logo" role="img" draggable="false"> -->
+        <h1 class="title">Proposal Form</h1>
+        <time class="time" datetime="2024-10-24">24/10/24</time>
+    </header>
+    <form class="proposal-form" action="" method="post">
+        <section class="customer-info">
+            <details class="accordion" name="form-detail" open>
+                <summary>Customer Information</summary>
+                <input class="inp-one" type="text" name="customer-title" id="customer-title" placeholder="Name/Title" required>
+                <input class="inp-one" type="tel" name="customer-tel" id="customer-tel" placeholder="Phone" required>
+                <input class="inp-one" type="email" name="customer-email" id="customer-email" placeholder="Email">
+                <input class="inp-one" type="text" name="customer-address" id="customer-address" placeholder="Address">
+            </details>
         </section>
         <hr class="divider small">
-        <section class="proposal-details">
-            <h2>Proposal Details</h2>
-            <form action="" class="accordion">
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-                <details class="product-details" name="proposal-details">
-                    <summary>Add Product ...</summary>
-                    <input class="text-input" type="text" name="product-code" id="product-code" placeholder="Product Code">
-                    <input class="text-input" type="text" name="product-description" id="product-description" placeholder="Product Description">
-                    <input class="text-input" type="number" name="product-quantity" id="product-quantity" placeholder="Quantity">
-                    <input class="text-input" type="text" name="product-unit" id="product-unit" placeholder="Unit">
-                    <input class="text-input" type="number" name="product-gross-price" id="product-gross-price" placeholder="Gross Price">
-                    <input class="text-input" type="number" name="product-disc-rate" id="product-disc-rate" placeholder="Discount Rate">
-                    <input class="text-input" type="number" name="product-reduced-price" id="product-reduced-price" placeholder="Reduced Price">
-                    <input class="text-input" type="number" name="product-net-price" id="product-net-price" placeholder="Net Price">
-                </details>
-            </form>
+        <section class="prod-info">
+            <details class="accordion" name="form-detail">
+                <summary>Add Product ...</summary>
+                <input class="inp-one" type="text" name="prod-code" id="prod-code" placeholder="Product Code">
+                <input class="inp-one" type="text" name="prod-descr" id="prod-descr" placeholder="Description">
+                <input class="inp-one" type="number" name="prod-qty" id="prod-qty" placeholder="Quantity">
+                <input class="inp-one" type="text" name="prod-unit" id="prod-unit" placeholder="Unit">
+                <input class="inp-one" type="number" name="prod-gross-price" id="prod-gross-price" placeholder="Gross Price">
+                <input class="inp-one" type="number" name="prod-disc-rate" id="prod-disc-rate" placeholder="Discount Rate">
+                <input class="inp-one" type="number" name="prod-reduced-price" id="prod-reduced-price" placeholder="Reduced Price">
+                <input class="inp-one" type="number" name="prod-net-price" id="prod-net-price" placeholder="Net Price">
+            </details>
+            <details class="accordion" name="form-detail">
+                <summary>Add Product ...</summary>
+                <input class="inp-one" type="text" name="prod-code" id="prod-code" placeholder="Product Code">
+                <input class="inp-one" type="text" name="prod-descr" id="prod-descr" placeholder="Description">
+                <input class="inp-one" type="number" name="prod-qty" id="prod-qty" placeholder="Quantity">
+                <input class="inp-one" type="text" name="prod-unit" id="prod-unit" placeholder="Unit">
+                <input class="inp-one" type="number" name="prod-gross-price" id="prod-gross-price" placeholder="Gross Price">
+                <input class="inp-one" type="number" name="prod-disc-rate" id="prod-disc-rate" placeholder="Discount Rate">
+                <input class="inp-one" type="number" name="prod-reduced-price" id="prod-reduced-price" placeholder="Reduced Price">
+                <input class="inp-one" type="number" name="prod-net-price" id="prod-net-price" placeholder="Net Price">
+            </details>
+            <details class="accordion" name="form-detail">
+                <summary>Add Product ...</summary>
+                <input class="inp-one" type="text" name="prod-code" id="prod-code" placeholder="Product Code">
+                <input class="inp-one" type="text" name="prod-descr" id="prod-descr" placeholder="Description">
+                <input class="inp-one" type="number" name="prod-qty" id="prod-qty" placeholder="Quantity">
+                <input class="inp-one" type="text" name="prod-unit" id="prod-unit" placeholder="Unit">
+                <input class="inp-one" type="number" name="prod-gross-price" id="prod-gross-price" placeholder="Gross Price">
+                <input class="inp-one" type="number" name="prod-disc-rate" id="prod-disc-rate" placeholder="Discount Rate">
+                <input class="inp-one" type="number" name="prod-reduced-price" id="prod-reduced-price" placeholder="Reduced Price">
+                <input class="inp-one" type="number" name="prod-net-price" id="prod-net-price" placeholder="Net Price">
+            </details>
         </section>
-        <hr class="divider small">
-        <section class="action-buttons">
-            <button class="btn green">Save & Exit</button>
-            <button class="btn red" onclick = "window.location.href='../0_homepage-sales/index.html';">Exit</button>
-        </section>
-    </main>
+    </form>
 </body>
 </html>

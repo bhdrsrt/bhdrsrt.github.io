@@ -1,77 +1,67 @@
-html {
-    /* font-size: 64px; */
-}
-
-.mobile-screen {
+body {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
     margin: 0 auto;
-    gap: 0.5em;
-
 }
 
-.mobile-screen > header {
-    background-color: var(--color-one);
-    color: var(--background-color);
+header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0.5em;
-}
-
-.mobile-screen > header > h1 {
-    font-weight: 600;
-}
-
-.mobile-screen > header > .date {
-    text-align: center;
-    font-weight: 500;
-}
-
-.mobile-screen > section {
-    width: min(80em, 100% - 1em);
-    margin: 0 auto;
-}
-
-.mobile-screen > .divider {
-    width: min(80em, 100% - 1em);
-    margin: 0 auto;
-}
-
-.mobile-screen .accordion > details > .text-input {
-    margin: 0 auto;
-    padding: 0.5em;
-    border-radius: 0;
-}
-
-.mobile-screen .accordion > details > *:last-child {
-    border-bottom: none;
-    border-bottom-left-radius: 0.125em;
-    border-bottom-right-radius: 0.125em;
-}
-
-.proposal-details {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 0.25em;
-    background-color: var(--color-one);
+    align-items: center;
+    padding: 0.25em 0.5em;
+    background-color: var(--border-color);
     color: var(--background-color);
 }
 
-.proposal-details > h2 {
-    padding: 0.25em;
+.logo {
+    height: 100%;
+    /* border: 1px solid green; */
 }
 
-.proposal-details > .accordion {
-    background-color: var(--background-color);
-    color: #000;
+.title {
+    /* border: 1px solid green; */
+    /* margin-left: 0.25em; */
 }
 
-.mobile-screen .action-buttons > * {
-    font-size: 1.25em;
-    margin-bottom: 0.25em;
+.time {
+    /* border: 1px solid green; */
+    /* margin-right: 0.5em; */
+}
+
+section {
+    /* border: 1px solid red; */
+}
+
+.proposal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25em;
+    margin: 0 auto;
+    padding: 0.25em 0.5em;
+    width: min(40rem, 100%);
+}
+
+/* .proposal-form > .accordion:not(:first-child) {
+    border-color: red;
+} */
+
+.prod-info > .accordion {
+    border-radius: 0;
+    /* border-top: none; */
+}
+
+.prod-info > .accordion:first-child {
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+}
+
+.prod-info > .accordion:last-child {
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+}
+
+.prod-info > .accordion:not(:first-child) {
+    border-top: none;
 }
