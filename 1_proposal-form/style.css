@@ -40,7 +40,7 @@ section {
     gap: 0.25em;
     margin: 0 auto;
     padding: 0.25em 0.5em;
-    width: min(40rem, 100%);
+    width: min(40em, 100%);
 }
 
 /* .proposal-form > .accordion:not(:first-child) {
@@ -64,4 +64,8 @@ section {
 
 .prod-info > .accordion:not(:first-child) {
     border-top: none;
+}
+
+.accordion > summary {
+    font-size: 1.5em;
 }
