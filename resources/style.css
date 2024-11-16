@@ -130,6 +130,25 @@ hr.larger {
     color: var(--border-color);
 }
 
+.btn-one-green {
+    --border-color: hsl(105, 100%, 36%);
+    background-color: var(--border-color);
+    color: var(--background-color);
+}
+
+.btn-one-green:hover {
+    border-color: var(--background-color);
+    background-color: var(--border-color);
+    border-radius: 0.375em;
+}
+
+.btn-one-green:active {
+    border: 0.125em solid var(--border-color);
+    border-radius: 0.25em;
+    background-color: var(--background-color);
+    color: var(--border-color);
+}
+
 /* Accordion Style */
 .accordion {
     --accordion-padding: 0.25em;
@@ -149,8 +168,8 @@ hr.larger {
 
 .accordion:hover {
     background-color: var(--border-color);
-    transition-timing-function: linear;
-    transition: background-color 250ms;
+    /* transition-timing-function: linear;
+    transition: background-color 250ms; */
 }
 
 .accordion:hover > summary {
@@ -178,6 +197,6 @@ hr.larger {
     padding: 0;
     font-size: 1.4em;
     font-weight: bold;
-    width: 1.2em;
+    /* width: 1.2em; */
     margin-left: auto;
 }
