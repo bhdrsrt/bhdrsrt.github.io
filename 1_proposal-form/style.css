@@ -69,3 +69,7 @@ section {
     border-top: none;
 }
 
+.btn-one {
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
