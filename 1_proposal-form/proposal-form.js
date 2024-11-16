@@ -1,98 +1,46 @@
-const accordionDetails = {
-    'parent': {
-        'element': 'details', 
-        'className': 'accordion', 
-        'name': 'form-detail'
-    },
-    'child1': {
-        'element': 'summary', 
-        'content': 'Add Product ...' 
-    },
-    'child2': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'text',
-        'name': 'prod-code',
-        'id': 'prod-code',
-        'placeholder': 'Product Code'
-    },
-    'child3': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'text',
-        'name': 'prod-descr',
-        'id': 'prod-descr',
-        'placeholder': 'Description'
-    },
-    'child4': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'number',
-        'name': 'prod-qty',
-        'id': 'prod-qty',
-        'placeholder': 'Quantity'
-    },
-    'child5': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'text',
-        'name': 'prod-unit',
-        'id': 'prod-unit',
-        'placeholder': 'Unit'
-    },
-    'child6': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'number',
-        'name': 'prod-gross-price',
-        'id': 'prod-gross-price',
-        'placeholder': 'Gross Price'
-    },
-    'child7': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'number',
-        'name': 'prod-disc-rate',
-        'id': 'prod-disc-rate',
-        'placeholder': 'Discount Rate'
-    },
-    'child8': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'number',
-        'name': 'prod-reduced-price',
-        'id': 'prod-reduced-price',
-        'placeholder': 'Reduced Price'
-    },
-    'child9': {
-        'element': 'input',
-        'className': 'inp-one',
-        'type': 'number',
-        'name': 'prod-net-price',
-        'id': 'prod-net-price',
-        'placeholder': 'Net Price'
-    }
-};
+function addProduct() {
+    // Create the details element and set its attributes
+    const detailsElement = document.createElement('details');
+    detailsElement.id = `item-${itemCount}`;
+    detailsElement.className = 'accordion';
+    detailsElement.setAttribute('name', 'form-detail');
+    itemCount++;
 
-function createAccordion(details) {
-    let accordion;
-    for (const hierarchy in details) {
-        if (hierarchy.substring(0, hierarchy.length-1) === 'child') {
-            console.log(hierarchy);
-        } else if (hierarchy === 'parent') {
-            for (const property in hierarchy) {
-                if (property === 'element') {
-                    accordion = document.createElement(hierarchy[property]);
-                } else {
-                    `accordion.${property}` = hierarchy[property];
-                }
-            }
-        }
-        else {
-            console.log(`The key <${hierarchy}> not found`);
-        }
+
+    // Add inner HTML for the details element
+    detailsElement.innerHTML = `
+        <summary>Add Product ...</summary>
+        <input class="inp-one" type="text" name="prod-code" id="prod-code" placeholder="Product Code">
+        <input class="inp-one" type="text" name="prod-descr" id="prod-descr" placeholder="Description">
+        <input class="inp-one" type="number" name="prod-qty" id="prod-qty" placeholder="Quantity">
+        <input class="inp-one" type="text" name="prod-unit" id="prod-unit" placeholder="Unit">
+        <input class="inp-one" type="number" name="prod-gross-price" id="prod-gross-price" placeholder="Gross Price">
+        <input class="inp-one" type="number" name="prod-disc-rate" id="prod-disc-rate" placeholder="Discount Rate">
+        <input class="inp-one" type="number" name="prod-reduced-price" id="prod-reduced-price" placeholder="Reduced Price">
+        <input class="inp-one" type="number" name="prod-net-price" id="prod-net-price" placeholder="Net Price">
+    `;
+
+    // Remove 'hidden' attribute from '.prod-info'
+    const section = document.querySelector('.prod-info');
+    if (section.hasAttribute('hidden')) {
+        section.removeAttribute('hidden');
+        document.getElementById('add-product').style.width = '1.2em';
     }
+
+    // Append the element to the section (class='prod-info') element
+    section.appendChild(detailsElement);
 }
 
-createAccordion(accordionDetails);
+// Select the element with id of 'add-product'
+const addProductButton = document.getElementById('add-product');
 
+// Add event listener 'click' to the 'addProductButton'
+addProductButton.addEventListener('click', addProduct);
+
+// Set item counter
+let itemCount = 0;
+
+// Add initial 5 rows
+for (itemCount; itemCount<5; ) {
+    addProduct();
+}
