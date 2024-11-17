@@ -20,6 +20,10 @@ function addProduct() {
 
     // Append the element to the section (class='prod-info') element
     document.querySelector('.prod-info').appendChild(detailsElement);
+
+    // Open added child automatically
+    document.querySelector(`#item-${itemCount} > summary`).click();
+    
     itemCount++;
 }
 
@@ -36,3 +40,6 @@ let itemCount = 0;
 for (itemCount; itemCount<10; ) {
     addProduct();
 }
+
+// Open customer information section after page loaded state
+document.querySelector(".customer-info summary").click();
