@@ -12,6 +12,7 @@ header {
     padding: 0.25em 0.5em;
     background-color: var(--border-color);
     color: var(--background-color);
+    user-select: none;
 }
 
 .logo {
@@ -69,12 +70,17 @@ section {
     border-top: none;
 }
 
+.btn-one {
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
 .form-btns {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 5em;
     gap: 0.25em;
 }
 
-.btn-one-red {
-    grid-column: span 2;
+.btn-one-black {
+    grid-row: span 2;
 }
