@@ -39,7 +39,7 @@ section {
     justify-content: center;
     gap: 0.5em;
     margin: 0 auto;
-    padding: 0.25em 0.5em;
+    padding: 0.25em;
     width: min(40em, 100%);
 }
 
@@ -69,7 +69,12 @@ section {
     border-top: none;
 }
 
-.btn-one {
-    text-transform: capitalize;
-    font-size: 1.4em;
+.form-btns {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.25em;
+}
+
+.btn-one-red {
+    grid-column: span 2;
 }
