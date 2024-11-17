@@ -9,15 +9,15 @@ function addProduct() {
 
     // Add inner HTML for the details element
     detailsElement.innerHTML = `
-        <summary>Add Product ...</summary>
-        <input class="inp-one" type="text" name="prod-code" id="prod-code" placeholder="Product Code">
-        <input class="inp-one" type="text" name="prod-descr" id="prod-descr" placeholder="Description">
-        <input class="inp-one" type="number" name="prod-qty" id="prod-qty" placeholder="Quantity">
-        <input class="inp-one" type="text" name="prod-unit" id="prod-unit" placeholder="Unit">
-        <input class="inp-one" type="number" name="prod-gross-price" id="prod-gross-price" placeholder="Gross Price">
-        <input class="inp-one" type="number" name="prod-disc-rate" id="prod-disc-rate" placeholder="Discount Rate">
-        <input class="inp-one" type="number" name="prod-reduced-price" id="prod-reduced-price" placeholder="Reduced Price">
-        <input class="inp-one" type="number" name="prod-net-price" id="prod-net-price" placeholder="Net Price">
+        <summary>Product Details ${itemCount}</summary>
+        <input class="inp-one" type="text" name="${itemCount}0-prod-code" id="${itemCount}0-prod-code" placeholder="Product Code">
+        <input class="inp-one" type="text" name="${itemCount}1-prod-descr" id="${itemCount}1-prod-descr" placeholder="Description">
+        <input class="inp-one" type="number" name="${itemCount}2-prod-qty" id="${itemCount}2-prod-qty" placeholder="Quantity">
+        <input class="inp-one" type="text" name="${itemCount}3-prod-unit" id="${itemCount}3-prod-unit" placeholder="Unit">
+        <input class="inp-one" type="number" name="${itemCount}4-prod-gross-price" id="${itemCount}4-prod-gross-price" placeholder="Gross Price">
+        <input class="inp-one" type="number" name="${itemCount}5-prod-disc-rate" id="${itemCount}5-prod-disc-rate" placeholder="Discount Rate">
+        <input class="inp-one" type="number" name="${itemCount}6-prod-reduced-price" id="${itemCount}6-prod-reduced-price" placeholder="Reduced Price">
+        <input class="inp-one" type="number" name="${itemCount}7-prod-net-price" id="${itemCount}7-prod-net-price" placeholder="Net Price">
     `;
 
     // Remove 'hidden' attribute from '.prod-info'
