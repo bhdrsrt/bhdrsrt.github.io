@@ -178,6 +178,7 @@ hr.larger {
 }
 
 .accordion > summary {
+    user-select: none;
     list-style: none;
     font-weight: bold;
     margin: 0 calc(-1 * var(--accordion-padding));
@@ -187,8 +188,6 @@ hr.larger {
 
 .accordion:hover {
     background-color: var(--border-color);
-    /* transition-timing-function: linear;
-    transition: background-color 250ms; */
 }
 
 .accordion:hover > summary {
