@@ -131,7 +131,7 @@ hr.larger {
 }
 
 .btn-one-green {
-    --border-color: hsl(105, 100%, 36%);
+    --border-color: hsl(120, 100%, 36%);
     background-color: var(--border-color);
     color: var(--background-color);
 }
@@ -143,6 +143,25 @@ hr.larger {
 }
 
 .btn-one-green:active {
+    border: 0.125em solid var(--border-color);
+    border-radius: 0.25em;
+    background-color: var(--background-color);
+    color: var(--border-color);
+}
+
+.btn-one-black {
+    --border-color: hsla(0, 0%, 15%, 1);
+    background-color: var(--border-color);
+    color: var(--background-color);
+}
+
+.btn-one-black:hover {
+    border-color: var(--background-color);
+    background-color: var(--border-color);
+    border-radius: 0.375em;
+}
+
+.btn-one-black:active {
     border: 0.125em solid var(--border-color);
     border-radius: 0.25em;
     background-color: var(--background-color);
