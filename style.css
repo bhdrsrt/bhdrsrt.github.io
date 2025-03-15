@@ -1,0 +1,39 @@
+:root {
+    --color-one: #F5F5F5;
+    --color-two: #30475E;
+    --color-three: #121212;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--color-three);
+    color: var(--color-one);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    border: 2px solid var(--color-two);
+    background: transparent;
+    box-shadow: 0 0 25px var(--color-two);
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.input-box {
+    border: 2px solid red;
+    
+}
