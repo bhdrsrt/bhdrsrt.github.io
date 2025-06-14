@@ -5,27 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="wrapper">
-        <form action="#" class="input-form">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" required>
-                <label for="">Username</label>
-                <i class='bx bxs-user' ></i>
-            </div>
-            <div class="input-box">
-                <input type="text" required>
-                <label for="">Password</label>
-                <i class='bx bxs-lock-alt' ></i>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="signup-section">
-                <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
-            </div>
+    <main class="login-container">
+        <img src="resources/logo.svg" alt="Company logo" class="logo" draggable="false">
+        <form action="" class="login-form">
+            <input type="text" name="username" id="username" aria-label="Username" placeholder="Username" autocomplete="current-username" required>
+            <input type="password" name="password" id="password" aria-label="Password" placeholder="Password" autocomplete="current-password" required>
+            <!-- <button type="submit">Login</button> -->
         </form>
-    </div>
+    </main>
 </body>
 </html>
