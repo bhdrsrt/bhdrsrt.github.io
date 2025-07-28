@@ -1,48 +1,75 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
+    border: 0;
     margin: 0;
-    --background-color: rgb(255, 253, 243);
-    --color-one: rgb(34, 34, 34);
-    --color-one-alpha: rgba(34, 34, 34, 0.5);
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    --color-one: #000000;
+    --color-two: #3E3636;
+    --color-three: #D72323;
+    --color-four: #FBF9FA;
 }
 
 body {
+    /* border: 1px solid red; */
+    background: var(--color-four);
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--background-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.login-container {
-    text-align: center;
+    gap: 10px;
+    padding: 16px;
 }
 
 .logo {
-    max-width: 400px;
-    margin-bottom: 1rem;
+    /* border: 1px solid green; */
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 3px solid var(--color-one);
+    padding-bottom: 10px;
 }
 
 .login-form {
-    padding: 0rem 1rem;
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
     margin: 0 auto;
+} 
+
+.input, .btn {
+    border-radius: 4px;
+    font-size: 24px;
+    padding: 8px;
 }
 
-input {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 0.5rem 0 0.25rem 0;
+.input {
     border: 2px solid var(--color-one);
-    border-radius: 6px;
-    font-size: 1.25rem;
+    text-align: center;
 }
 
-input:focus {
-    outline: none;
-    border-color: var(--background-color);
-    box-shadow: 0 0 0 3px var(--color-one-alpha);
-    transition: box-shadow 0.3s ease;
+.input:focus {
+    /* border-color: var(--color-one); */
+}
+
+.btn {
+    border: 2px solid var(--color-three);
+    background-color: var(--color-three);
+    color: var(--color-four);
+}
+
+.btn:hover {
+    border-color: var(--color-four);
+    /* background-color: var(--color-three); */
+    /* color: var(--color-four); */
+    border-radius: 8px;
+}
+
+.btn:focus {
+    border-color: var(--color-three);
+    background-color: var(--color-four);
+    color: var(--color-three);
+    border-radius: 4px;
 }

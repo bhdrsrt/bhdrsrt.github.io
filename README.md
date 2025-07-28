@@ -1,2 +1,2 @@
-# Enterprise Resource Planning (ERP) Frontend
-
+# ERP-Project
+Enterprise resource planning for small businesses
