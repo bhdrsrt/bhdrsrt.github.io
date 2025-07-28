@@ -10,14 +10,14 @@
 }
 
 body {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: var(--color-four);
     max-width: 500px;
     margin: 0 auto;
     /* min-height: 100vh;
     min-height: 100svh; */
-    height: 100vh;
-    height: 100dvh;
+    /* height: 100vh; */
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,13 +37,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
     max-width: 300px;
     margin: 0 auto;
 } 
 
 .input, .btn {
     border-radius: 4px;
-    font-size: 24px;
+    font-size: 20px;
     padding: 8px;
 }
 
