@@ -10,12 +10,14 @@
 }
 
 body {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background: var(--color-four);
     max-width: 500px;
     margin: 0 auto;
-    min-height: 100vh;
-    min-height: 100svh;
+    /* min-height: 100vh;
+    min-height: 100svh; */
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
