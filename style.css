@@ -1,22 +1,7 @@
-* {
-    border: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    --color-one: #000000;
-    --color-two: #3E3636;
-    --color-three: #D72323;
-    --color-four: #FBF9FA;
-}
-
 body {
-    /* border: 1px solid red; */
     background: var(--color-four);
     max-width: 500px;
     margin: 0 auto;
-    /* min-height: 100vh;
-    min-height: 100svh; */
-    /* height: 100vh; */
     height: 100svh;
     display: flex;
     flex-direction: column;
@@ -26,7 +11,6 @@ body {
 }
 
 .logo {
-    /* border: 1px solid green; */
     width: 100%;
     margin: 0 auto;
     border-bottom: 3px solid var(--color-one);
@@ -40,39 +24,4 @@ body {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-} 
-
-.input, .btn {
-    border-radius: 4px;
-    font-size: 20px;
-    padding: 8px;
-}
-
-.input {
-    border: 2px solid var(--color-one);
-    text-align: center;
-}
-
-.input:focus {
-    /* border-color: var(--color-one); */
-}
-
-.btn {
-    border: 2px solid var(--color-three);
-    background-color: var(--color-three);
-    color: var(--color-four);
-}
-
-.btn:hover {
-    border-color: var(--color-four);
-    /* background-color: var(--color-three); */
-    /* color: var(--color-four); */
-    border-radius: 8px;
-}
-
-.btn:focus {
-    border-color: var(--color-three);
-    background-color: var(--color-four);
-    color: var(--color-three);
-    border-radius: 4px;
 }
