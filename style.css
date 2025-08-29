@@ -14,12 +14,12 @@ body {
 }
 
 .wrapper {
-    user-select: none;
     min-height: 100svh;
     width: 100%;
     max-width: calc(500px + 2em);
     padding: 1em;
     margin: 0 auto;
+    user-select: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
