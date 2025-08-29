@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Menu</title>
-    <link rel="stylesheet" href="../resources/elements.css">
+    <link rel="stylesheet" href="../resources/styles/elements.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <img src="../resources/company-logo.svg" alt="Company logo" class="logo" draggable="false">
-        <div class="menu">
-            <h1 class="title">Main Menu</h1>
-            <div class="item">
-                <h2 class="title">Sales</h2>
-                <button class="btn-one btn-gray">Proposal Form</button>
-                <button class="btn-one btn-gray">Sales Form</button>
-                <button class="btn-one btn-gray">Stock Details</button>
-                <button class="btn-one btn-gray">Warehouse Delivery Receipt</button>
-            </div>
-            <button class="btn-one btn-red" onclick="window.location.href='../index.html'">Log Out</button>
+    <div class="wrapper">
+        <img src="../resources/images/company-logo.svg" alt="Company logo" class="logo" draggable="false">
+        <div class="sales-menu">
+            <button class="btn">Proposal Form</button>
+            <button class="btn">Sales Form</button>
+            <button class="btn">Stock Details</button>
+            <button class="btn">Warehouse Delivery Receipt</button>
+            <button class="btn btn-red" onclick="window.location.href='../index.html'">Log Out</button>
         </div>
     </div>
 </body>
