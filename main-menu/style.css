@@ -7,6 +7,7 @@
 :root {
     --logo-color: rgb(33, 33, 32);
     --light-text-color: var(--light-color);
+    --sales-menu-width: 350px;
 }
 
 body {
@@ -30,38 +31,19 @@ body {
 
 .logo {
     max-width: 100%;
-    border-bottom: 3px solid var(--logo-color);
-    padding-bottom: 10px;
+    border-bottom: 0.15em solid var(--logo-color);
+    padding-bottom: 0.5em;
 }
 
 .sales-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 0.75em;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 0.25em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-
-    h1 {
-        font-size: 1.5em;
-        width: 100%;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.25em;
-        background-color: var(--logo-color);
-        color: var(--light-text-color);
-        padding: 0.375em;
-    }
+    max-width: var(--sales-menu-width);
 }
 
 .btn-red {
-    max-width: 302px;
+    max-width: calc(var(--sales-menu-width) + 0.1em);
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
     .inp {
         font-size: 1em;
         border-bottom-width: 0.125em;
@@ -74,4 +56,4 @@ body {
     .sales-menu h1 {
         font-size: 1.25em;
     }
-}
+} */
