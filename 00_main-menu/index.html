@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Menu</title>
     <link rel="stylesheet" href="../resources/styles/elements.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Main Menu</title>
 </head>
 <body>
     <div class="wrapper">
@@ -16,18 +16,10 @@
 
         <div class="menu-card sales-menu">
             <h1 class="heading"><span>Sales</span></h1>
-            <button class="btn">Proposal Form</button>
-            <button class="btn">Sales Form</button>
-            <button class="btn">Stock Details</button>
-            <button class="btn">Warehouse Delivery Receipt</button>
-        </div>
-        
-        <div class="menu-card sales-menu">
-            <h1 class="heading"><span>Sales</span></h1>
-            <button class="btn">Proposal Form</button>
-            <button class="btn">Sales Form</button>
-            <button class="btn">Stock Details</button>
-            <button class="btn">Warehouse Delivery Receipt</button>
+            <button class="btn" onclick="window.location.href='../01_proposal-form/index.html'">Proposal Form</button>
+            <button class="btn" onclick="window.location.href='../02_sales-form/index.html'">Sales Form</button>
+            <button class="btn" onclick="window.location.href='../03_stock-details/index.html'">Stock Details</button>
+            <button class="btn" onclick="window.location.href='../04_warehouse-receipt/index.html'">Warehouse Delivery Receipt</button>
         </div>
 
         <button class="btn btn-red" onclick="window.location.href='../index.html'">Log Out</button>

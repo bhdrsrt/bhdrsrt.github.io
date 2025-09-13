@@ -5,7 +5,7 @@
 }
 
 :root {
-    --logo-color: rgb(33, 33, 32);
+    --logo-color: var(--dark-color);
     --light-text-color: var(--light-color);
     --sales-menu-width: 350px;
 }
