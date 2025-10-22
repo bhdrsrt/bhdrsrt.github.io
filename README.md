@@ -1,2 +1,2 @@
-# ERP-Project
-Enterprise resource planning for small businesses
+# ERP
+Enterprise resource planning project
